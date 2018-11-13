@@ -1,0 +1,151 @@
+.paratodo{
+    font-family: 'Open Sans', sans-serif;
+    color:#6a6c6f;
+    text-transform: uppercase;
+}
+.tamaño10px{
+    font-size: 10px;
+}
+.iconos > span{
+    font-size: 13px;
+    margin-top: 7px;
+    
+}
+.coloricon{
+    font-size: 10px;
+    background-color: #34495e;
+    color: #eeeeee;
+}
+.checkOtros {
+    height: 10px;
+    vertical-align: middle;
+}
+.wr{
+    white-space: nowrap;
+    padding-left: 14px;
+    padding-right: 0px;
+}
+.wr1{
+    white-space: nowrap;
+    padding-left: 0px;
+    padding-right: 0px;
+}
+
+.wr2{
+    white-space: nowrap;
+}
+.sinBorde{
+    box-shadow: none;
+}
+.form-horizontal .control-label{
+    text-align: left;
+}
+.container-step1 {
+    padding-left: 0px;
+    padding-right: 0px;
+    padding-top: 5px;
+}
+ 
+@media only screen and (min-device-width: 330px) and (max-device-width: 660px) {
+.container-step1 {
+    padding-left: 0px;
+    padding-right: 0px;
+    padding-top: 35px;
+}
+}
+.cssnacimiento{
+    padding-left: 10px; 
+    padding-right: 0px;
+}
+@media only screen and (max-device-width: 660px){
+    .cssnacimiento{
+        padding-left: 0px;
+    }
+}
+.csschecks{
+    padding-left: 40px;
+}
+
+@media only screen and (min-device-width: 330px) and (max-device-width: 660px){
+    .csschecks{
+        padding-left: 44px;
+    }
+}
+@media only screen and (min-device-width: 661px) and (max-device-width: 900px){
+    .csschecks{
+        padding-left: 28px;
+    }
+}
+@media only screen and (min-device-width: 901px) and (max-device-width: 1100px){
+    .csschecks{
+        padding-left: 30px;
+    }
+}
+
+@media only screen and (min-device-width: 1101px){
+    .csschecks{
+        padding-left: 30px;
+    }
+}
+
+.csschecks1{
+    padding-left: 40px;
+}
+@media only screen and (max-device-width: 660px){
+    .csschecks1{
+        padding-left: 45px;
+    }
+}
+.csspaddingcheck{
+    padding-right: 0px; 
+    padding-left: 15px;
+}
+
+@media only screen and (max-device-width: 660px){
+    .csspaddingcheck{
+        padding-right: 0px; 
+        padding-left: 0px;
+    }
+}
+.csspaddingcheck1{
+    margin-top: 7px;
+    padding-right: 0px;
+    padding-left: 30px;
+}
+@media only screen and (max-device-width: 660px){
+    .csspaddingcheck1{
+        padding-right: 0px; 
+        padding-left: 15px;
+    }
+}
+
+@media only screen and (max-device-width: 660px){
+    .abajo{
+        padding-bottom: 12px;
+    }
+}
+.margen{
+    padding-top: 7px;
+}
+
+.checkarr{
+    margin-top: 0px;
+    padding-top: 1px;
+}
+.nav-tabs.nav-justified>.active>a, .nav-tabs.nav-justified>.active>a:focus, .nav-tabs.nav-justified>.active>a:hover {
+    border: 0;
+    border-bottom: 3px solid #FFA01C;
+    background: transparent;
+}
+.arreglotabla{
+    overflow: auto; 
+    height: 41px; 
+    width: 1220px   !important;
+    border-collapse: collapse;
+    position: relative;
+}
+@media only screen and (max-device-width: 660px) {
+    .espacio {
+        margin-top: 10px;
+    }
+}

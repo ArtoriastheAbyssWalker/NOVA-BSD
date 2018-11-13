@@ -1,0 +1,634 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <title>Bootstrap Example</title>
+
+  <meta charset="utf-8">
+  
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+
+
+    <!-- Vendor styles -->
+    <link rel="stylesheet" href="vendor/fontawesome/css/font-awesome.css" />
+    <link rel="stylesheet" href="vendor/metisMenu/dist/metisMenu.css" />
+    <link rel="stylesheet" href="vendor/animate.css/animate.css" />
+    <link rel="stylesheet" href="vendor/bootstrap/dist/css/bootstrap.css" />
+    <link rel="stylesheet" href="vendor/datatables.net-bs/css/dataTables.bootstrap.min.css" />
+
+    <!-- App styles -->
+    <link rel="stylesheet" href="fonts/pe-icon-7-stroke/css/pe-icon-7-stroke.css" />
+    <link rel="stylesheet" href="fonts/pe-icon-7-stroke/css/helper.css" />
+    <link rel="stylesheet" href="styles/style.css">
+    <link rel="stylesheet" href="jquery-ui-1.12.1.custom/jquery-ui.css">
+  <link rel="stylesheet" type="text/css" href="./main.css"/>
+  
+</head>
+
+
+<body  class="paratodo">
+<div class="container-fluid">
+<form></form>
+
+        <div class="row ">
+            <div class="col-sm-11 col-xs-10">
+                <p><strong>Información general del paciente:</strong></p>
+            </div>
+            <div class="col-sm-1 col-xs-2 iconos">
+                <span class="glyphicon glyphicon-home"></span>
+            </div>
+        </div>
+
+        <div class="panel panel-warning">
+        <div class="panel-body">
+                    
+
+            <div class="col-lg-4 col-md-4 col-sm-6 col-xs-12 form-horizontal abajo" role="form"> 
+                <div class="form-group">
+                    <p class="control-label col-lg-3 col-md-5 col-sm-5 text-left tamaño10px">Nombre:</p>
+                    <div class="col-lg-9 col-md-7 col-sm-7">
+                        <input type="text" class="form-control input-sm" id="TSNombre">
+                    </div>
+                </div>
+            </div>
+            <div class= "col-lg-4 col-md-3 col-sm-6 col-xs-12 form-horizontal">
+                <div class="form-group col-sm-11 col-xs-12">
+                    <select class="form-control input-sm" id="Search01" >
+                        <option>1</option>
+                        <option>2</option>
+                        <option>3</option>
+                        <option>4</option>
+                    </select>
+                </div>
+                <span class="glyphicon glyphicon-search col-sm-1 col-xs-1 iconos" style="padding-top: 7px;"></span>
+            </div>
+            <div class="col-lg-3 col-md-4 col-sm-6 col-xs-12 form-horizontal" role="form"> 
+                <div class="form-group">
+                    <p class="control-label col-lg-4 col-md-4 col-sm-5 tamaño10px" for="usr">Tipo:</p>
+                    <div class="col-lg-8 col-md-8 col-sm-7 ">
+                        <input type="text" class="form-control  input-sm" id="TSTipo">
+                    </div>
+                </div>
+            </div>
+            <div class="col-lg-4 col-md-4 col-sm-6 col-xs-12 form-horizontal" role="form"> 
+                <div class="form-group">
+                    <p class="control-label col-lg-3 col-md-5 col-sm-4 tamaño10px wr2" for="usr">Número Socio:</p>
+                    <div class=" col-lg-9 col-md-7 col-sm-6">
+                        <input type="text" class="form-control input-sm" id="TSNumeroSocio">
+                    </div>
+                </div>
+            </div>
+            <div class="col-lg-4 col-md-3 col-sm-6 col-xs-12 form-horizontal" role="form"> 
+                <div class="form-group">
+                    <p class="control-label col-lg-3 col-md-6 col-sm-5 tamaño10px wr2" for="usr">Número Ternium:</p>
+                    <div class="col-lg-9 col-md-6 col-sm-7">
+                        <input type="text" class="form-control input-sm" id="TSNumeroTernium">
+                    </div>
+                </div>
+            </div>
+            <div class="col-lg-3 col-md-4 col-sm-6 col-xs-12 form-horizontal" role="form"> 
+                <div class="form-group">
+                    <p class="control-label col-lg-4 col-md-4 col-sm-4 tamaño10px" for="usr">Empresa:</p>
+                    <div class="col-lg-8 col-md-8 col-sm-6">
+                        <input type="text" class="form-control input-sm" id="TSEmpresa">
+                    </div>
+                </div>
+            </div>
+            
+            <div class="col-lg-4 col-md-4 col-sm-6 col-xs-12 form-horizontal"> 
+                <div class="form-group">
+                    <p class="control-label col-lg-3 col-md-5 col-sm-5 tamaño10px" for="usr">Sexo:</p>
+                    <div class="col-lg-9 col-md-7 col-sm-7">
+                        <input type="text" class="form-control input-sm" id="TSSexo">
+                    </div>
+                </div>
+            </div>
+            <div class="col-lg-4 col-md-3 col-sm-6 col-xs-12 form-horizontal" role="form"> 
+                <div class="form-group">
+                    <p class="control-label col-lg-3 col-md-6 col-sm-4 tamaño10px" for="usr">Edad:</p>
+                    <div class="col-lg-9 col-md-6 col-sm-6">
+                        <input type="text" class="form-control input-sm" id="TSEdad">
+                    </div>
+                </div>
+            </div>
+            <div class="col-lg-3 col-md-4 col-sm-6 col-xs-10 form-horizontal" role="form"> 
+                <p class="control-label col-lg-4 col-md-4 col-sm-5 tamaño10px wr1 margen">F. Nacimiento:</p>
+                <div class="col-lg-8 col-md-8 col-sm-7 cssnacimiento">
+                    <div class='input-group date' data-provide="datepicker" >
+                        <input type='text' class="form-control input-sm" id="TSFechaNacimiento" readonly/>
+                        <span class="input-group-addon coloricon" id="TSFechaNacimientoBtn">
+                            <span class="fa fa-calendar"></span>
+                        </span>
+                    </div>
+                </div>
+            </div>
+            <div class="col-lg-1 col-md-1 col-sm-2 col-xs-2 form-horizontal container-step1">
+                <span class="glyphicon glyphicon-user"></span>
+                <span class="glyphicon glyphicon-stats"></span>
+            </div>
+
+        </div>
+        </div>
+
+
+        <div class="row">
+            <div class="col-md-4 col-sm-4 col-xs-12 form-horizontal">
+                <div class=" control-label col-sm-5 tamaño10px wr1">
+                   <p>Notas históricas:</p> 
+                </div>
+                <div class="col-sm-7 col-xs-12" style="padding-left: 0px; padding-right: 0px; padding-bottom: 15px;">
+                    <select class="form-control input-sm" id="Search02">
+                        <option>1</option>
+                        <option>2</option>
+                        <option>3</option>
+                        <option>4</option>
+                    </select>
+                </div>
+            </div>
+            <div class="col-md-4 col-sm-5 col-xs-12 form-horizontal"> 
+            <p class="control-label col-md-5 col-sm-4 tamaño10px wr1">Fecha Ingreso:</p>
+            <div class="form-group col-md-7 col-sm-8">
+                <div class='input-group date' data-provide="datepicker">
+                    <input type='text' class="form-control input-sm" id="TSFechaIngreso" readonly/>
+                    <span class="input-group-addon coloricon" id="TSFechaIngresoBtn">
+                        <span class="fa fa-calendar"></span>
+                    </span>
+                </div>
+            </div>
+            </div>
+            <div class="col-md-4 col-sm-3 col-xs-12 form-horizontal"> 
+                <div class="form-group">
+                    <p class="control-label col-md-5 col-sm-5 tamaño10px wr" for="usr">Cuarto Cama:</p>
+                    <div class="col-md-7 col-sm-7">
+                        <input type="text" class="form-control input-sm" id="TSCuartoCama">
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div>
+            <ul class="nav nav-tabs nav-justified tamaño10px">
+                <li id="TSNotaDeTrabajoSocialPestaña" class="active"><a href="#tabGeneral" aria-controls="tablaGeneral" role="tab" data-toggle="tab" aria-expanded="true">Trabajo Social</a></li>
+                <li id="TSNotaDeTrabajoSocialSeguimientoPestaña" class=""><a href="#tabCalidad" aria-controls="tablaCalidad" role="tab" data-toggle="tab" aria-expanded="false">Trabajo Social-Seguimineto</a></li>
+                <li id="TSAdjuntarInformacionPestaña" class=""><a href="#tabUbicacion" aria-controls="tabUbicacion" role="tab" data-toggle="tab" aria-expanded="false">Información</a></li>
+                <li id="TSHistoricoPestaña" class=""><a href="#tabDimensionales" aria-controls="tabDimensionales" role="tab" data-toggle="tab" aria-expanded="false">Histórico</a></li>
+            </ul>
+        </div>
+
+        <div class="panel" id="TSNotaDeTrabajoSocial">
+        <div class="panel-body">
+            
+            <div class="card list-group">
+                <ul>
+                    <label class="checkbox col-sm-2 tamaño10px margen checkarr" >
+                        <input type="checkbox" id="TSCheckHospital"value="">Hospital
+                    </label>
+                    <label class="checkbox col-sm-2 tamaño10px margen">
+                        <input type="checkbox" id="TSCheckDomicilio"value="">Domicilio
+                    </label>
+                    <label class="checkbox col-sm-2 tamaño10px margen">
+                        <input type="checkbox" id="TSCheckConsulta"value="">Consulta
+                    </label>
+                </ul>
+            </div>
+
+            <div class="row col-md-12 col-sm-12 form-horizontal form-group wr1">
+                <div class="col-sm-2 tamaño10px margen">
+                    <p>Fecha Atención:</p>
+                </div>
+                <div class="col-sm-4 form-horizontal" action="" method="post">
+                    <div class='input-group date' data-provide="datepicker">
+                        <input type='text' id="TSFechaAtencion" class="form-control input-sm" readonly>
+                        <span class="input-group-addon coloricon " id="TSFechaAtencionbtn">
+                            <span class="fa fa-calendar"></span>
+                        </span>
+                    </div>
+                </div>
+                <div class="col-sm-4" style="background-color:rgb(255, 255, 255);">
+                    <input type="text" class="form-control input-sm espacio" id="usr">
+                </div>
+                <div class="col-sm-1 iconos" style="margin-top: 7px;">
+                    <span class="fa fa-toggle-on" id="TSSwitch"></span>
+                </div>
+            </div>
+
+            <div class="row form-horizontal" > 
+                <div class="col-md-2 col-sm-2 col-xs-12 tamaño10px">
+                    <p>Servicio</p>  
+                </div>
+                <div>
+                    <div class="col-md-4 col-sm-5 col-xs-12 csschecks1">
+                        <label class="checkbox tamaño10px">
+                            <input type="checkbox" id="TSCheckAsesoria" value="">Asesoría Familiar
+                        </label>
+                    </div>
+                    <div class="col-md-4 col-sm-5 col-xs-12 csschecks">
+                        <label class="checkbox tamaño10px">
+                            <input type="checkbox" id="TSCheckAsistencia" value="">Asistencia
+                        </label>
+                    </div> 
+                </div> 
+            </div>
+
+            <div class="row form-horizontal" style="padding-left: 30px;"> 
+                <div class="col-md-2 col-sm-2">
+                    <div class="col-sm-2 margen">
+                    </div> 
+                </div>
+                <div class="col-md-4 col-sm-5">
+                    <label class="checkbox tamaño10px">
+                        <input type="checkbox" id="TSCheckOrientacion">Orientación/Canalización internas externas
+                    </label>
+                </div>
+                <div class="col-md-4 col-sm-5">
+                    <label class="checkbox tamaño10px">
+                        <input type="checkbox" id="TSCheckApoyo"value="">Apoyo Espiritual
+                    </label>
+                </div>  
+            </div>
+
+            <div class="row form-horizontal form-group" style="padding-left: 30px;"> 
+                <div class="col-md-2 col-sm-2">
+                    <div class="col-sm-2 margen">
+                    </div> 
+                </div>
+                <div class="col-md-4 col-sm-5">
+                    <label class="checkbox tamaño10px">
+                        <input type="checkbox" id="TSCheckEstudio"value="">Estudio Social
+                    </label>
+                </div>
+                <div class="col-md-4 col-sm-5">
+                    <label class="checkbox tamaño10px">
+                        <input type="checkbox" id="TSCheckAcompñamiento"value="">Acompañamiento por Voluntariado
+                    </label>
+                </div>  
+            </div>
+
+            <div class="row "> 
+                <div class="col-md-6 col-sm-6 form-group form-horizontal tamaño10px" role="form" >
+                    <div class="col-md-4 col-sm-4 margen wr1">
+                        <p for="usr">Estatus:</p>
+                    </div>
+                    <div class="col-md-8 col-sm-8">
+                        <select class="form-control input-sm" id="Search03">
+                            <option>1</option>
+                            <option>2</option>
+                            <option>3</option>
+                            <option>4</option>
+                        </select>
+                    </div>
+                </div>
+
+
+                <div class="col-md-6 col-sm-6">
+                    <div class="col-md-4 col-sm-4">
+                        <label class="checkbox tamaño10px" style="padding-left: 15px; margin-top: 5px;">
+                            <input type="checkbox" id="TSOtros" value=""><p style="padding-top: 3px;">Otros:</p> 
+                        </label>
+                    </div>
+                    <div class="col-md-8 col-sm-8">
+                        <input type="text" class="form-control input-sm" id="TSOtrosInput">
+                    </div>
+                </div>
+                
+            </div>
+
+            <div class="row "> 
+                <div class="col-md-6 col-sm-6 form-group form-horizontal tamaño10px"> 
+                    <p for="usr"class=" col-md-4 col-sm-4 wr1 margen">F. Canalización:</p>
+                    <div class="col-md-8 col-sm-8">
+                        <div class='input-group date' data-provide="datepicker">
+                            <input type='text' class="form-control input-sm" id="TSFechaCanalizacion" readonly/>
+                            <span class="input-group-addon coloricon" id="TSFechaCanalizacionBtn">
+                                <span class="fa fa-calendar"></span>
+                            </span>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-md-6 col-sm-6 form-group form-horizontal tamaño10px" role="form" >
+                    <div class="col-sm-4 margen">
+                        <p class="csspaddingcheck">Médico:</p>
+                    </div>
+                    <div class="col-sm-8">
+                        <select class="form-control input-sm" id="Search04">
+                            <option>1</option>
+                            <option>2</option>
+                            <option>3</option>
+                            <option>4</option>
+                        </select>
+                    </div>
+                </div>
+            </div>
+
+            <div class="row ">
+                <div class="col-md-6 col-sm-6 form-group form-horizontal tamaño10px">
+                    <div class="col-sm-4 margen wr1">
+                        <p for="usr">Dependencia:</p>
+                    </div>
+                    <div class="col-sm-8">
+                        <select class="form-control input-sm" id="Search05">
+                            <option>1</option>
+                            <option>2</option>
+                            <option>3</option>
+                            <option>4</option>
+                        </select>
+                    </div>
+                </div>
+                <div class="col-md-6 col-sm-6 form-group form-horizontal tamaño10px wr2" role="form" >
+                    <div class="col-sm-4 csspaddingcheck1">
+                        <p>Dependencia Ex:</p>
+                    </div>
+                    <div class="col-sm-8">
+                        <select class="form-control input-sm" id="Search06">
+                            <option>1</option>
+                            <option>2</option>
+                            <option>3</option>
+                            <option>4</option>
+                        </select>
+                    </div>
+                </div>
+            </div>
+
+            <div class="row form-group">
+                <div class="col-sm-2 tamaño10px margen">
+                <p>Motivo</p>
+                </div>
+                <div class="col-sm-10">
+                    <textarea class="form-control small" rows="4" id="TSMotivo" style="resize:none;"></textarea>
+                </div> 
+            </div>
+
+            <div class="row form-group">
+                <div class="col-sm-2 tamaño10px margen">
+                <p for="usr">Antecedente</p>
+                </div>
+                <div class="col-sm-10">
+                    <textarea class="form-control small" rows="4" id="TSAntecedente" style="resize:none;"></textarea>
+                </div> 
+            </div>
+        </div>
+        </div>
+
+        <div class="panel tamaño10px" id="TSNotaDeTrabajoSocialSeguimiento">
+            <div class="panel-body">
+                <div class="row"></div>
+                
+                <div class="row form-group" >
+                    <div class="col-md-2 col-sm-3">
+                        <div class="col-md-12 col-sm-12 col-xs-12 wr1">
+                            <p>Observaciones</p>
+                        </div>
+                    </div>
+                    <div class="col-md-3 col-sm-3 abajo">
+                        <div class="col-md-12 col-sm-12 col-xs-12 wr1">
+                            <p>Necesidades Médicas</p>
+                        </div>
+                        <textarea class="form-control " rows="4" id="TSNecesidadMedica" style="resize:none;"></textarea>
+                    </div>
+                    
+                    <div class="col-md-3 col-sm-3 abajo">
+                        <div class="col-md-12 col-sm-12 col-xs-12 wr1">
+                            <p>Necesidades Sociales</p>
+                        </div>
+                        <textarea class="form-control abajo" rows="4" id="TSNecesidadSocial" style="resize:none;"></textarea>
+                    </div>
+                    <div class="col-md-3 col-sm-3 abajo">
+                        <div class="col-md-12 col-sm-12 col-xs-12 wr1">
+                            <p>Necesidades de Servicios</p>
+                        </div>
+                        <textarea class="form-control" rows="4" id="TSNecesidadServicio" style="resize:none;"></textarea>
+                    </div>
+                </div>
+                <div class="row form-group form-horizontal" >
+                    <div class="" margen >
+                        <div class=" col-md-2 col-sm-3">
+                            <p>Análisis</p>
+                        </div>
+                        <div class="col-sm-9">
+                            <textarea class="form-control" rows="4" id="TSAnalisis" style="resize:none;"></textarea>
+                        </div>
+                    </div>
+                </div>   
+                <div class="row form-group form-horizontal" >
+                    <div class="" margen >
+                        <div class=" col-md-2 col-sm-3">
+                            <p>Plan Seguimiento<p>
+                        </div>
+                        <div class="col-sm-9">
+                            <textarea class="form-control" rows="4" id="TSPlanSeguimiento" style="resize:none;"></textarea>
+                        </div>
+                    </div>
+                </div> 
+                <div class="row form-group form-horizontal" >
+                    <div class="" margen >
+                        <div class="col-md-2 col-sm-3">
+                            <p>Fecha Conclusión</p>
+                        </div>
+                        <div class="col-sm-4  form-horizontal" method="post">
+                            <div class='input-group date' data-provide="datepicker">
+                                <input type='text' id="TSFechaConclusion" class="form-control" readonly/>
+                                <span class="input-group-addon coloricon" id="TSFechaConclusionBtn">
+                                    <span class="fa fa-calendar"></span>
+                                </span>
+                            </div>
+                        </div> 
+                    </div>
+                </div> 
+            </div>
+        </div>
+
+        <div class="panel tamaño10px" id="TSAdjuntarInformacion">
+            <div class="panel-body">
+                <div class="row form-group form-horizontal" >
+                    <div class="wr2">
+                        <div class="col-sm-3 margen">
+                            <p>Seleccionar Archivo:</p>
+                        </div>
+                    </div>
+                    <div class="col-sm-4" style="background-color:rgb(255, 255, 255);">
+                        <input type="text" class="form-control input-sm" id="TSSeleccionarArchivo">
+                    </div>
+                    <div class="col-sm-1 iconos">
+                        <span class="glyphicon glyphicon-search"></span>
+                    </div>
+                    <div class="col-sm-1 iconos margen">
+                        <span class=""></span>
+                    </div>
+                </div>
+                <div class="col-lg-6 col-md-6 col-sm-6 col-xs-12">
+                    <table class="table dataTable" id="example2">
+                        <thead>
+                            <tr>
+                                <th>Nombre de Archivo</th>
+                                <th>Ver Archivo</th>
+                                <th>Eliminar</th>
+                            </tr>
+                        </thead>
+                        <tbody>
+                            <tr role="row">
+                                <td>Mark my words, Ashen One... </td>
+                                <td>You remain among the Accursed.</td>
+                                <td>Eliminar</td>
+                            </tr>
+                            <tr role="row">
+                                <td>Nombre de Archivo</td>
+                                <td>Ver Archivo</td>
+                                <td>Eliminar</td>
+                            </tr>
+                            <tr role="row">
+                                <td>Nombre de Archivo</td>
+                                <td>Ver Archivo</td>
+                                <td>Eliminar</td>
+                            </tr>
+                        </tbody>
+                    </table>
+                </div>
+
+                <div class="row form-group">
+                    <div class="col-md-7 col-sm-12 form-horizontal" role="form">
+                        <div class="form-group"> 
+                            <div class="col-sm-1 margen">
+                                <img  style="height: 20px; width: 20px   !important;" src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAADIAAAAyCAYAAAAeP4ixAAAAAXNSR0IArs4c6QAAAARnQU1BAACxjwv8YQUAAAAJcEhZcwAADsMAAA7DAcdvqGQAAANcSURBVGhD7Zl7SFNRHMdH//Rvf/VP0F/SH9E2N00rIyMhSy1HT42KSjRNDMGSms6R9jCR0mimCeKDHlZsvUTnIzMfSEUa6D9pCSlZkmm4xTS2X+ccz73eu11q89Huxv3Ch3HP75zd7/funnvu7pVJkiRJkiSulHrlCmVW0Fa5Tp2uyFZVKvSKlbQkXim1ylVKnTpanq3KQhiR+U8KnRq4rNUHrabdRSC9bBk6smvQEY5TZKuvos9GZHrM2bQQXgsSkBawfJ1WFSzPUSciwwZkphOZn3I26C7/PQgyq0c77pXrVDPOZhZC5N2oOzHG2DJPiTZqDFGPd4dSe+4LBWgXMrJQdtTughiTZn4YNU3UnvsSY5BoU2w7tee+pCD/wG+C5HcVwM2eEsKR+mPEoLZDx7Y5g2uiDPJlchQYZb46Twy+HG6jLa7CtUUNsvHiZkiqTGGJLz3MM4gJ1Afz+mhu7HXp4/Ug2OTAt0H69QDTv6choiCSZ1JvyqVVAIfDAUfLj/PqmOaPL6BnrJeQ2nKaGKzqr2HbnMG1RQ2CSahIojZnVd1Zw9bWX9gAo5NfaQXA9O4JbyyDaCa7ua+JWgWwTlthy5VtpP2auYi2Akz++gnh+REuYzHJDamQ3ppB2PcsjhhMMJ9k25zBtSUJElkYBbYZG7UMUNp6G8IuhRPzjPKeXnYZx+D1OcKlrLWc7gZg3DIO183FdAugb6QfAnOCBcdhRBUkJHcTz5DFZiWfdodd8GrGZeD7IEzNTBEy2jKJwYahRrbNGVxbsiCYM/cziXmuHrx+KNiXi+hWdu0jHbU/p6b+ZsG+XEQVBF+pJqwTxDw+nbgT/VR1muAYBlGdWs9766htgDdDb+Fedy3dAvg8PkzWFKFxGNFM9uSqVLqLWZ2oSITthTvBhlZ6RviSLDQWI4ogoXlhMPJjhO4CoONDJ1vDqzwjfPsSU6ThjWUQxYJY1TFnFs+N/YZ4tobnjcVmoVWArsFu3lgGr0/2gyWHwG63U5sAde/reQYxhpZbtDqrs7XnXPp4/aYxtngP7xZd6F4Kn3rcPgdK5n4xBlGt7AvBb4L4zV9dv3n4IAVB+E2QeT0yFeNDbEQItee5fP61wl/liy96PJHvvXrzQD75MlSSJEmSllgy2R+XdUjEmrqvyQAAAABJRU5ErkJggg==">
+                            </div>
+                            <div class="col-sm-6">
+                                <input type="text" class="form-control input-sm" id="TSBuscar">
+                            </div>
+                            <div class="col-sm-2 iconos">
+                                <span class="glyphicon glyphicon-search"></span>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <div class="panel tamaño10px" id="TSHistorico">
+        <div class="panel-body">
+
+            <div class="col-lg-4 col-md-5 col-sm-8 col-xs-12 form-group form-horizontal">
+                <div id="containerTablaStockAllData_filter" class="dataTables_filter col-lg-10 col-md-10 col-sm-10 col-xs-12">
+                    <div class="col-lg-3 col-md-3 col-sm-3 col-xs-4 margen">
+                        <p>BUSCAR</p>
+                    </div>
+                    <div class="col-lg-7 col-md-7 col-sm-7 col-xs-10">
+                        <input type="text" class="form-control input-sm" id="TSBuscador1">
+                    </div>
+                    <div class="col-lg-2 col-md-2 col-sm-2 col-xs-2">
+                        <img  style="height: 20px; width: 20px   !important;" src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAADIAAAAyCAYAAAAeP4ixAAAAAXNSR0IArs4c6QAAAARnQU1BAACxjwv8YQUAAAAJcEhZcwAADsMAAA7DAcdvqGQAAANcSURBVGhD7Zl7SFNRHMdH//Rvf/VP0F/SH9E2N00rIyMhSy1HT42KSjRNDMGSms6R9jCR0mimCeKDHlZsvUTnIzMfSEUa6D9pCSlZkmm4xTS2X+ccz73eu11q89Huxv3Ch3HP75zd7/funnvu7pVJkiRJkiSulHrlCmVW0Fa5Tp2uyFZVKvSKlbQkXim1ylVKnTpanq3KQhiR+U8KnRq4rNUHrabdRSC9bBk6smvQEY5TZKuvos9GZHrM2bQQXgsSkBawfJ1WFSzPUSciwwZkphOZn3I26C7/PQgyq0c77pXrVDPOZhZC5N2oOzHG2DJPiTZqDFGPd4dSe+4LBWgXMrJQdtTughiTZn4YNU3UnvsSY5BoU2w7tee+pCD/wG+C5HcVwM2eEsKR+mPEoLZDx7Y5g2uiDPJlchQYZb46Twy+HG6jLa7CtUUNsvHiZkiqTGGJLz3MM4gJ1Afz+mhu7HXp4/Ug2OTAt0H69QDTv6choiCSZ1JvyqVVAIfDAUfLj/PqmOaPL6BnrJeQ2nKaGKzqr2HbnMG1RQ2CSahIojZnVd1Zw9bWX9gAo5NfaQXA9O4JbyyDaCa7ua+JWgWwTlthy5VtpP2auYi2Akz++gnh+REuYzHJDamQ3ppB2PcsjhhMMJ9k25zBtSUJElkYBbYZG7UMUNp6G8IuhRPzjPKeXnYZx+D1OcKlrLWc7gZg3DIO183FdAugb6QfAnOCBcdhRBUkJHcTz5DFZiWfdodd8GrGZeD7IEzNTBEy2jKJwYahRrbNGVxbsiCYM/cziXmuHrx+KNiXi+hWdu0jHbU/p6b+ZsG+XEQVBF+pJqwTxDw+nbgT/VR1muAYBlGdWs9766htgDdDb+Fedy3dAvg8PkzWFKFxGNFM9uSqVLqLWZ2oSITthTvBhlZ6RviSLDQWI4ogoXlhMPJjhO4CoONDJ1vDqzwjfPsSU6ThjWUQxYJY1TFnFs+N/YZ4tobnjcVmoVWArsFu3lgGr0/2gyWHwG63U5sAde/reQYxhpZbtDqrs7XnXPp4/aYxtngP7xZd6F4Kn3rcPgdK5n4xBlGt7AvBb4L4zV9dv3n4IAVB+E2QeT0yFeNDbEQItee5fP61wl/liy96PJHvvXrzQD75MlSSJEmSllgy2R+XdUjEmrqvyQAAAABJRU5ErkJggg==">
+                    </div>
+                </div>
+            </div>
+            <div class="row">
+                <div class="dataTables_scroll">
+                    <div class="" style="overflow: auto; width: 100%;">
+                        <table class="table dataTable no-footer dataTables_scrollBody" id="example1" role="grid" style="margin-left: 0px; width: 1455px;">
+                            <thead>
+                            <tr>
+                                <th style="width: 110px;">Servicio</th>
+                                <th style="width: 140px;">Descripción</th>
+                                <th style="width: 180px;">Trabajador Social</th>
+                                <th style="width: 180px;">Fecha de Atención</th>
+                                <th style="width: 180px;">Fecha de Canización</th>
+                                <th style="width: 140px;">Fecha Cierre</th>
+                                <th style="width: 110px;">Detalle</th>
+                            </tr>
+                        </thead>
+                        <tbody>
+                            <tr role="row" class="odd">
+                                <td>Oh, dear, another dogged contender.</td>
+                                <td>Welcome, Unkindled One, purloiner of Cinders.</td>
+                                <td>Mind you, the mantle of Lord interests me none.</td>
+                                <td>The fire linking curse, the legacy of lords</td>
+                                <td>let it all fade into nothing.</td>
+                                <td>You've done quite enough, now have your rest.</td>
+                                <td>Detalle</td>
+                            </tr>
+                            <tr role="row" class="even">
+                                <td>Servicio</td>
+                                <td>Descripción</td>
+                                <td>Trabajador Social</td>
+                                <td>Fecha dexxhjxvuxvu</td>
+                                <td>Fecha de Canización</td>
+                                <td>Fecha Cierre</td>
+                                <td>Detalle</td>
+                            </tr>
+                            <tr role="row" class="even">
+                                <td>I see...</td>
+                                <td>I've seen your kind, time and time again.</td>
+                                <td>Every fleeing man must be caught.</td>
+                                <td>Every secret must be unearthed.</td>
+                                <td>Such is the conceit of the self-proclaimed seeker of truth.</td>
+                                <td>But in the end, you lack the stomach.</td>
+                                <td>For the agony you'll bring upon yourself..."</td>
+                            </tr>
+                        </tbody>
+                    </table>
+                </div>
+            </div>
+
+            </div>
+            </div>
+
+
+                
+            </div>
+        </div>
+        </div>
+
+        <div class="row form-group">
+           
+            <div class="col-sm-6">
+                <div class="col-sm-5 tamaño10px wr margen">
+                    <p>Trabajador(a) Social:</p>
+                </div>
+                <div class="col-sm-7" style="background-color:rgb(255, 255, 255);">
+                    <input type="text" class="form-control input-sm" id="TSTrabajador">
+                </div>
+            </div>
+            <div class="col-sm-5">
+                <div class="col-sm-2 tamaño10px wr2 margen">
+                    <p>Fecha:</p>
+                </div>
+                <div class="col-sm-10 form-horizontal" method="post">
+                    <div class='input-group date' data-provide="datepicker">
+                        <input type='text' id="TSFecha01" class="form-control input-sm" readonly/>
+                        <span class="input-group-addon coloricon" style="font-size: 10px;" id="TSFecha01Btn">
+                            <span class="fa fa-calendar" aria-hidden="true"></span>
+                        </span>
+                        <span class="input-group">
+                            <input type="text" class="form-control input-sm" id="TSFecha02">
+                        </span>
+                    </div>
+                </div>
+            </div>
+            <div class="col-sm-1 iconos">
+                <span class="glyphicon glyphicon-home"></span>
+            </div>
+        
+        </div>
+    </form>
+</div>
+
+</body>
+
+<!-- Vendor scripts -->
+<script src="vendor/jquery/dist/jquery.min.js"></script>
+<script src="vendor/jquery-ui/jquery-ui.min.js"></script>
+<script src="vendor/slimScroll/jquery.slimscroll.min.js"></script>
+<script src="vendor/bootstrap/dist/js/bootstrap.min.js"></script>
+<script src="vendor/metisMenu/dist/metisMenu.min.js"></script>
+<script src="vendor/iCheck/icheck.min.js"></script>
+<script src="vendor/sparkline/index.js"></script>
+<!-- DataTables -->
+<script src="vendor/datatables/media/js/jquery.dataTables.js"></script>
+<script src="vendor/datatables.net-bs/js/dataTables.bootstrap.js"></script>
+<!-- DataTables buttons scripts -->
+<script src="vendor/pdfmake/build/pdfmake.min.js"></script>
+<script src="vendor/pdfmake/build/vfs_fonts.js"></script>
+<script src="vendor/datatables.net-buttons/js/buttons.html5.js"></script>
+<script src="vendor/datatables.net-buttons/js/buttons.print.js"></script>
+<script src="vendor/datatables.net-buttons/js/dataTables.buttons.js"></script>
+<script src="vendor/datatables.net-buttons-bs/js/buttons.bootstrap.js"></script>
+<link scr="jquery-ui-1.12.1.custom/jquery-ui.js">
+<script src="Ejemplo.js"></script>
+
+
+</html>
